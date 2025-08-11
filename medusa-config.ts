@@ -1,4 +1,4 @@
-import { loadEnv, defineConfig } from '@medusajs/framework/utils'
+import { loadEnv, defineConfig, Modules } from '@medusajs/framework/utils'
 
 loadEnv(process.env.NODE_ENV || 'development', process.cwd())
 
@@ -12,5 +12,22 @@ module.exports = defineConfig({
       jwtSecret: process.env.JWT_SECRET || "supersecret",
       cookieSecret: process.env.COOKIE_SECRET || "supersecret",
     }
-  }
+  },
+  
+  modules: {
+    [Modules.PAYMENT]: {
+      // this exposes the /store/payment-collections* routes
+      resolve: '@medusajs/medusa/payment',
+      options: {
+        providers: [
+          {
+            // “Manual / System” provider – perfect for your test flow
+            resolve: '@medusajs/medusa/payment-manual',
+            id: 'system',
+            options: {},
+          },
+        ],
+      },
+    },
+  },
 })
