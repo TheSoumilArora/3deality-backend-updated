@@ -2,7 +2,8 @@ import { loadEnv, defineConfig } from '@medusajs/framework/utils'
 
 loadEnv(process.env.NODE_ENV || 'development', process.cwd())
 
-module.exports = defineConfig({
+module.exports = defineConfig(
+{
   projectConfig: {
     databaseUrl: process.env.DATABASE_URL,
     http: {
@@ -16,12 +17,9 @@ module.exports = defineConfig({
 
   modules:
   {
-    payment: {
+    payment:
+    {
       resolve: '@medusajs/medusa/payment',
-      options: {
-        // System provider is perfect for COD / offline flows
-        providers: [{ id: 'pp_system', resolve: '@medusajs/medusa/payment' }],
-      },
-    },
-  },
+    }
+  }
 })
