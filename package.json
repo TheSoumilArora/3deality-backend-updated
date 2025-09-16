@@ -23,7 +23,9 @@
   },
   "dependencies": {
     "@medusajs/admin-sdk": "2.10.2",
+    "@medusajs/cache-redis": "^2.10.2",
     "@medusajs/cli": "2.10.2",
+    "@medusajs/event-bus-redis": "^2.10.2",
     "@medusajs/framework": "2.10.2",
     "@medusajs/medusa": "2.10.2",
     "@mikro-orm/core": "6.4.3",

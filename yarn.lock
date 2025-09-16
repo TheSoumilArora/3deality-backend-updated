@@ -2090,7 +2090,7 @@
   resolved "https://registry.npmjs.org/@medusajs/cache-inmemory/-/cache-inmemory-2.10.2.tgz"
   integrity sha512-VlzGfLhWPZ85HV7iLR9O+I2SwQxIpHj6AyDkA8IY6+Bq9mCBaJtkoayg6ZIQmuoOqdbo1oDrZehbXVAEi3Sfhw==
 
-"@medusajs/cache-redis@2.10.2":
+"@medusajs/cache-redis@^2.10.2", "@medusajs/cache-redis@2.10.2":
   version "2.10.2"
   resolved "https://registry.npmjs.org/@medusajs/cache-redis/-/cache-redis-2.10.2.tgz"
   integrity sha512-SjNduKTAhK3I6+UmCGC5jCWsS68QnV64iwANrI9MmAC/9mVq7RkyfcQPRXw0T/D+Gq4cbCZl6a8vKXopK/+FIQ==
@@ -2216,7 +2216,7 @@
   dependencies:
     ulid "^2.3.0"
 
-"@medusajs/event-bus-redis@2.10.2":
+"@medusajs/event-bus-redis@^2.10.2", "@medusajs/event-bus-redis@2.10.2":
   version "2.10.2"
   resolved "https://registry.npmjs.org/@medusajs/event-bus-redis/-/event-bus-redis-2.10.2.tgz"
   integrity sha512-v4x5mbStDQLDxJqS0WHQWFA7XepXDUzFZPY3t5Rg6A8MV9SjBg3N3jTcMjaqQOPjnCXlr/SLAj4nywqzg2TU3w==
